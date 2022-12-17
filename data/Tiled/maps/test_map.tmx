@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="left-up" width="48" height="47" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
+ <tileset firstgid="1" source="../tilesets/forest_.tsx"/>
+ <tileset firstgid="541" source="../tilesets/forestDecoration_0.tsx"/>
+ <tileset firstgid="662" source="../tilesets/forestDecoration_1.tsx"/>
+ <tileset firstgid="827" source="../tilesets/forestDecoration_2.tsx"/>
+ <layer id="1" name="Floor" width="48" height="47">
+  <data encoding="base64" compression="zlib">
+   eJztmLFOxDAMhnOssByIDkw96AkxwW1sPDfMgGDncUAiFTXyWYnbpHbqSjnpV6fan2ufHWfnnNtVVVX969Lrwbgahv/a621jW23lT9bW2z0P6CLDXyl+zLyP+OsyYijBv40wQ39oZsSgzU/ZcU87DPbvSQxjfqfkUoq/JeyHiE0cA5eDWC61+Tn2UKyhGEK51O7/bYItWkedO+5PlL3/Htr1n8IfiiEknEtr/BADd2bAdViKP6e3p9jX5teKoSS/lM1S/KFerc2P5+PVDF+xuTs2AyTzezPDV0vYpbk1+fG312QP8eOZdzfBL5yloK/QutHegeb+f2l/L1U30vwQQ6m6keKn5xWtPqPFT2MovfNL8GM7FvihBlLmlyV+YEjp/5b4YQZM6f8W+WkeKv8y/HR/5rTPeEdCU+9SQsJn7djOTe/gx3ZzSXH3/w2plVgeaT1x+ZZW7/vZ+/wafPfPF8SxBv73zbH/V8Rx6/Xk9ejidWiB/3vw/UP4gY1j4u7QSvB/eL7Tkz/OM//8RPzdAkyp/Dl914rWzs/NIqs1U7WM1v77BbjtpEM=
+  </data>
+ </layer>
+ <layer id="5" name="Floor decoraions" width="48" height="47">
+  <data encoding="base64" compression="zlib">
+   eJztl7kOwjAMhqOqT8NVGDhUng82zoUNNqBPwMjxZLhDpShKk6I4TVz8SR6qSPFvJ6ltIRiGYZoxTML5Xhh895W1DL4HFq22dYxYTZpnHnI50ezpw08dtpy6Mnfcv81cUKatPMV8Hqa322VWqRBryTZpaEW/cQa9F8muGv29QGebS37V+lL92x6g9wB2BDuBPYnl30Te4TdVnd8IKca6WodRY33X6aaMkXWofaBvQvbDOlz7o5CUucR6O67Edq5MHJjuha22ZY53SjfbYRBLLbDhK35sXP/BSyJxMkzMbGFu2oHtlfkJu+f0xQ1038EKovPfC3S/wT5/rp9yT15CpT/QMU3ovHeGYRiGDl90KBsM
+  </data>
+ </layer>
+ <layer id="4" name="Decorations" width="48" height="47">
+  <data encoding="base64" compression="zlib">
+   eJztmEtuAjEMhtFcDKTuijRruqVdFrgFdwF6ANpuu2i7LvfBERNhhTycxJlYJZ8UCTSJ88djO8lMJo1Go3Fl2tUdr5k57ITsPxrPHyL1mOOp85rMHf1N+yG7PZM/XeuSalchJRZTyfVNzPjYOB8bVz5ruOJcw+UPbQfnsy2uuGONyx82O7a4KpnH90oo5qXj2sMwY9bYEjUuJ+5j329qTpfyMeX95qB116gtHD7DusfO5VifrQP9S79r6eePkD5KbtY8T/aB84cNM2Zz85Br/T4deI7cmOVePwXOObjXT30mBd/6Y32TWp+k1LXUswPHPYLiA47a8Eqocb64dY0xfWDrZ+atnid1Xa464Itblwaqbds8Ne91pc8cjf9L7W93GDMPF/D/ifAdutbeoe4Ce2gHaG/dJQ+xlmf4/RLQpvpzf5OL4R3m/oD2OWjAWihnl5raFd8w/w+030EHvp9Jr4s70LcUrtHHEbSvkP5tJ6uehPgCrX/QTtA2AvbxRqNxyxlhYSwa
+  </data>
+ </layer>
+</map>
