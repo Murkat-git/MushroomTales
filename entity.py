@@ -46,7 +46,8 @@ class Entity(pygame.sprite.Sprite):
 
     def animate(self):
         self.anim_counter += self.speed
-        if self.anim_counter % 10 == 0:
+        if self.anim_counter >= 10:
+            self.anim_counter = 0
             self.frame_id += 1
             self.frame_id %= len(self.frames[self.status])
             self.image = pygame.transform.flip(self.frames[self.status][self.frame_id],
