@@ -10,7 +10,7 @@ class Game:
         # self.map = Map(map_path)
         self.camera = Camera(map_path)
         self.all_sprites = self.camera.get_group()
-        self.player = Player((50, 50), 1)
+        self.player = Player("fungant_", (50, 50), 1)
         self.all_sprites.add(self.player)
 
     def update(self):
