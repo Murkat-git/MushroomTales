@@ -1,10 +1,10 @@
 {
     "activeFile": "data/Tiled/maps/test_map.tmx",
     "expandedProjectPaths": [
-        ".",
         "data/Tiled/maps",
-        "data/Tiled",
+        ".",
         "data",
+        "data/Tiled",
         "data/Tiled/tilesets"
     ],
     "fileStates": {
@@ -12,8 +12,8 @@
             "scale": 0.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 956,
-                "y": 1227
+                "x": 548,
+                "y": 799
             }
         },
         "C:/Users/gtim0/Desktop/pyscroll-master/apps/tutorial/data/grasslands.tmx#Revolution_Grasslands": {
@@ -44,11 +44,11 @@
             "scaleInDock": 1
         },
         "data/Tiled/maps/test_map.tmx": {
-            "scale": 2,
+            "scale": 8,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 204.5,
-                "y": 451.25
+                "x": 451.75,
+                "y": 249.1875
             }
         },
         "data/Tiled/tilesets/forestDecoration_0.tsx": {
@@ -68,8 +68,10 @@
             "scaleInEditor": 1
         }
     },
+    "last.exportedFilePath": "C:/Users/gtim0/PycharmProjects/YLPygameProject/data/Tiled/maps",
     "last.externalTilesetPath": "C:/Users/gtim0/PycharmProjects/YLPygameProject/data/Tiled/tilesets",
     "last.imagePath": "C:/Users/gtim0/Desktop",
+    "map.lastUsedExportFilter": "JSON map-файлы (*.tmj *.json)",
     "openFiles": [
         "data/Tiled/tilesets/forest_.tsx",
         "data/Tiled/tilesets/forestDecoration_0.tsx",

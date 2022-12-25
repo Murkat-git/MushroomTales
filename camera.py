@@ -11,9 +11,10 @@ class Camera:
         self.map_layer = pyscroll.BufferedRenderer(
             data=pyscroll.data.TiledMapData(self.tmx_data),
             size=(500, 500),
-            clamp_camera=True,
+            clamp_camera=False,
         )
-        self.map_layer.zoom = 2.5
+
+        self.map_layer.zoom = 3
         self.group = pyscroll.PyscrollGroup(map_layer=self.map_layer, default_layer=1)
 
     def get_group(self):
@@ -27,3 +28,6 @@ class Camera:
 
     def add(self, sprite):
         self.group.add(sprite)
+
+    def get_prefs(self):
+        return self.map_layer.get_center_offset(), self.map_layer._real_ratio_x, self.map_layer._real_ratio_y
