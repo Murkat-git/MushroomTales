@@ -8,7 +8,7 @@ screen = pygame.display.set_mode(size)
 pygame.display.set_caption("RPG")
 clock = pygame.time.Clock()
 
-game = Game("data/Tiled/maps/test_map.tmx")
+game = Game("data/Tiled/maps/generatortest.tmx")
 
 running = True
 while running:

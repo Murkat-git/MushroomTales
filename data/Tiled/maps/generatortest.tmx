@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="50" height="51" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="15">
+ <tileset firstgid="1" source="../tilesets/forest_.tsx"/>
+ <tileset firstgid="541" source="../tilesets/forestDecoration_0.tsx"/>
+ <tileset firstgid="662" source="../tilesets/utilities.tsx"/>
+ <layer id="1" name="Floor" width="50" height="51">
+  <data encoding="base64" compression="zlib">
+   eJzt1k0OgjAQBeDRG/jHGoyuVWKiK+NKb6gbr+O9bKMNhLRWKNBHfJO8FGoX/RKmNROR21jkORK5q/GhkglOfq3Y+6TD71iobB1JAtb27VjKu19sSQPWxnLMS3s0zy7HSY1HlYPK2bE2liMvOcyzy2F+q74jOOp+V6iOiRqnn8xkuI6NFGfPzuPQ/XFVuQhefwz9vFpJ8T1Vsw5Y27cDKU0c5bs5+TKH7ND7Nb1senxvmevbUtdh69fcMpcO0NHVGUSH36HPT3Nnu6Lv9zbO0i4dPksMQ1OHyxLLEOKoWmIaQh3G0tZ/i5gOlNCBFTqwQgdW6MAKHVihAyt0YIUOrNCBlX9zsFgsFovVpF4foCOs
+  </data>
+ </layer>
+ <layer id="7" name="Connections" width="50" height="51">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAACAFwMn2AAB
+  </data>
+ </layer>
+ <layer id="2" name="Decorations" width="50" height="51">
+  <data encoding="base64" compression="zlib">
+   eJzt1j0KgDAMhuHS4/gz+nMHwU08gI6ewwt7AeMgVMigm195Hyi0pUNCEmgIAL6a4vPc23mO/lsFnXDsORpf1mOP/h5ItU5vDPQLECpnDkqx2Vgs3lUsZk9hOdROHpvdNcL5eT2m4q5HDv+LKxf+uv+iPBsAkJsjWQAAAAAAAPifE7RyCYM=
+  </data>
+ </layer>
+ <layer id="3" name="Tall decorations" width="50" height="51">
+  <data encoding="base64" compression="zlib">
+   eJzt00ENACAQA8ELykgwAf6NcC4gzYyCPrpVABnWeL2AdNPHIMLulo+eAQAAAAAAgI9daMYBPQ==
+  </data>
+ </layer>
+ <layer id="6" name="Connectors" width="50" height="51" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt07kRACAIBEDH/kuwWHMDRwMYn92Ui+AoBfK1GpOFW816Ps52svCi1Z77hxz2fC63yWHP8Ce/DwAAAABAtA6iTgdp
+  </data>
+ </layer>
+ <objectgroup id="4" name="Rooms">
+  <object id="2" x="32" y="208" width="176" height="160"/>
+  <object id="3" x="80" y="48" width="128" height="144"/>
+  <object id="4" x="256" y="48" width="128" height="144"/>
+ </objectgroup>
+</map>

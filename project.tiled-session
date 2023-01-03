@@ -1,13 +1,20 @@
 {
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
     "activeFile": "data/Tiled/maps/test_map.tmx",
     "expandedProjectPaths": [
+        "data/Tiled/tilesets",
+        "data/Tiled",
         "data/Tiled/maps",
         ".",
-        "data",
-        "data/Tiled",
-        "data/Tiled/tilesets"
+        "data"
     ],
     "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
         "C:/Users/gtim0/Desktop/pyscroll-master/apps/tutorial/data/grasslands.tmx": {
             "scale": 0.5,
             "selectedLayer": 0,
@@ -29,6 +36,7 @@
             "scaleInDock": 1
         },
         "C:/Users/gtim0/Desktop/pyscroll-master/apps/tutorial/data/water.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 1
         },
         "data/Tiled/maps/Tiled tilesets/forestDecoration_0.tsx": {
@@ -43,50 +51,81 @@
         "data/Tiled/maps/Tiled tilesets/forest_.tsx": {
             "scaleInDock": 1
         },
-        "data/Tiled/maps/test_map.tmx": {
-            "scale": 8,
-            "selectedLayer": 2,
+        "data/Tiled/maps/generatortest.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 451.75,
-                "y": 249.1875
+                "x": 167.5,
+                "y": 196.25
+            }
+        },
+        "data/Tiled/maps/generatortest.tmx#utilities": {
+            "dynamicWrapping": true,
+            "scaleInEditor": 1
+        },
+        "data/Tiled/maps/test_map.tmx": {
+            "scale": 1,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 377,
+                "y": 573.5
             }
         },
         "data/Tiled/tilesets/forestDecoration_0.tsx": {
             "scaleInDock": 2,
-            "scaleInEditor": 4
+            "scaleInEditor": 1
         },
         "data/Tiled/tilesets/forestDecoration_1.tsx": {
-            "scaleInDock": 1,
+            "dynamicWrapping": false,
+            "scaleInDock": 1.5,
             "scaleInEditor": 1
         },
         "data/Tiled/tilesets/forestDecoration_2.tsx": {
-            "scaleInDock": 1,
+            "dynamicWrapping": false,
+            "scaleInDock": 2,
             "scaleInEditor": 1
         },
         "data/Tiled/tilesets/forest_.tsx": {
             "scaleInDock": 2,
             "scaleInEditor": 1
+        },
+        "data/Tiled/tilesets/utilities.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 4,
+            "scaleInEditor": 11
         }
     },
     "last.exportedFilePath": "C:/Users/gtim0/PycharmProjects/YLPygameProject/data/Tiled/maps",
     "last.externalTilesetPath": "C:/Users/gtim0/PycharmProjects/YLPygameProject/data/Tiled/tilesets",
-    "last.imagePath": "C:/Users/gtim0/Desktop",
+    "last.imagePath": "C:/Users/gtim0/PycharmProjects/YLPygameProject/data/Tiled/forest_ v1.3",
+    "map.fixedSize": false,
     "map.lastUsedExportFilter": "JSON map-файлы (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.layerDataFormat": null,
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
     "openFiles": [
         "data/Tiled/tilesets/forest_.tsx",
         "data/Tiled/tilesets/forestDecoration_0.tsx",
         "data/Tiled/tilesets/forestDecoration_1.tsx",
         "data/Tiled/tilesets/forestDecoration_2.tsx",
         "data/Tiled/maps/test_map.tmx",
-        "C:/Users/gtim0/Desktop/pyscroll-master/apps/tutorial/data/grasslands.tmx"
+        "data/Tiled/maps/generatortest.tmx",
+        "data/Tiled/tilesets/utilities.tsx"
     ],
     "project": "project.tiled-project",
+    "property.type": "object",
     "recentFiles": [
+        "data/Tiled/maps/generatortest.tmx",
         "data/Tiled/tilesets/forest_.tsx",
         "data/Tiled/tilesets/forestDecoration_0.tsx",
         "data/Tiled/tilesets/forestDecoration_1.tsx",
         "data/Tiled/tilesets/forestDecoration_2.tsx",
-        "C:/Users/gtim0/Desktop/pyscroll-master/apps/tutorial/data/grasslands.tmx",
-        "data/Tiled/maps/test_map.tmx"
-    ]
+        "data/Tiled/tilesets/utilities.tsx",
+        "data/Tiled/maps/test_map.tmx",
+        "C:/Users/gtim0/Desktop/pyscroll-master/apps/tutorial/data/grasslands.tmx"
+    ],
+    "tileset.embedInMap": false,
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.type": 1
 }
