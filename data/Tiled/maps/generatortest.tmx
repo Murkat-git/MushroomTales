@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="50" height="51" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="15">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="50" height="51" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="15">
  <tileset firstgid="1" source="../tilesets/forest_.tsx"/>
  <tileset firstgid="541" source="../tilesets/forestDecoration_0.tsx"/>
  <tileset firstgid="662" source="../tilesets/utilities.tsx"/>
+ <tileset firstgid="669" source="../tilesets/forestDecoration_2.tsx"/>
+ <tileset firstgid="1219" source="../tilesets/entities.tsx"/>
  <layer id="1" name="Floor" width="50" height="51">
   <data encoding="base64" compression="zlib">
    eJzt1k0OgjAQBeDRG/jHGoyuVWKiK+NKb6gbr+O9bKMNhLRWKNBHfJO8FGoX/RKmNROR21jkORK5q/GhkglOfq3Y+6TD71iobB1JAtb27VjKu19sSQPWxnLMS3s0zy7HSY1HlYPK2bE2liMvOcyzy2F+q74jOOp+V6iOiRqnn8xkuI6NFGfPzuPQ/XFVuQhefwz9vFpJ8T1Vsw5Y27cDKU0c5bs5+TKH7ND7Nb1senxvmevbUtdh69fcMpcO0NHVGUSH36HPT3Nnu6Lv9zbO0i4dPksMQ1OHyxLLEOKoWmIaQh3G0tZ/i5gOlNCBFTqwQgdW6MAKHVihAyt0YIUOrNCBlX9zsFgsFovVpF4foCOs
@@ -25,7 +27,12 @@
  </layer>
  <layer id="6" name="Connectors" width="50" height="51" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzt07kRACAIBEDH/kuwWHMDRwMYn92Ui+AoBfK1GpOFW816Ps52svCi1Z77hxz2fC63yWHP8Ce/DwAAAABAtA6iTgdp
+   eJzt07kRACAIBEDH/kuwWHMDRwMYn92Ui+AoBfK1GpuH28w6Ps52svCi1Z77hxz2fC63yWHP8Ce/DwAAAABAtA6f1gdp
+  </data>
+ </layer>
+ <layer id="11" name="Entities" width="50" height="51" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt0rERgCAQRUEC+m8KDUTtyYhQTRTmdLeCd3M/JeBtcx5dcK8GaOTa5oc8YLIjfqwE3f8StLvZg/efWT96FwAAAAAAAH0cg+oGZA==
   </data>
  </layer>
  <objectgroup id="4" name="Rooms">

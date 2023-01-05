@@ -3,13 +3,13 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "data/Tiled/maps/test_map.tmx",
+    "activeFile": "data/Tiled/maps/generatortest.tmx",
     "expandedProjectPaths": [
         "data/Tiled/tilesets",
-        "data/Tiled",
-        "data/Tiled/maps",
         ".",
-        "data"
+        "data",
+        "data/Tiled",
+        "data/Tiled/maps"
     ],
     "fileStates": {
         "": {
@@ -53,10 +53,10 @@
         },
         "data/Tiled/maps/generatortest.tmx": {
             "scale": 2,
-            "selectedLayer": 1,
+            "selectedLayer": 5,
             "viewCenter": {
-                "x": 167.5,
-                "y": 196.25
+                "x": 217,
+                "y": 211.75
             }
         },
         "data/Tiled/maps/generatortest.tmx#utilities": {
@@ -67,13 +67,18 @@
             "scale": 1,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 377,
-                "y": 573.5
+                "x": 290.5,
+                "y": 375.5
             }
         },
+        "data/Tiled/tilesets/entities.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 3,
+            "scaleInEditor": 5.5
+        },
         "data/Tiled/tilesets/forestDecoration_0.tsx": {
-            "scaleInDock": 2,
-            "scaleInEditor": 1
+            "scaleInDock": 1.5,
+            "scaleInEditor": 8
         },
         "data/Tiled/tilesets/forestDecoration_1.tsx": {
             "dynamicWrapping": false,
@@ -82,12 +87,13 @@
         },
         "data/Tiled/tilesets/forestDecoration_2.tsx": {
             "dynamicWrapping": false,
-            "scaleInDock": 2,
+            "scaleInDock": 1.5,
             "scaleInEditor": 1
         },
         "data/Tiled/tilesets/forest_.tsx": {
-            "scaleInDock": 2,
-            "scaleInEditor": 1
+            "dynamicWrapping": false,
+            "scaleInDock": 1.5,
+            "scaleInEditor": 5.5
         },
         "data/Tiled/tilesets/utilities.tsx": {
             "dynamicWrapping": true,
@@ -97,7 +103,7 @@
     },
     "last.exportedFilePath": "C:/Users/gtim0/PycharmProjects/YLPygameProject/data/Tiled/maps",
     "last.externalTilesetPath": "C:/Users/gtim0/PycharmProjects/YLPygameProject/data/Tiled/tilesets",
-    "last.imagePath": "C:/Users/gtim0/PycharmProjects/YLPygameProject/data/Tiled/forest_ v1.3",
+    "last.imagePath": "C:/Users/gtim0/PycharmProjects/YLPygameProject/data/Spritesheets/Entities/troll_/idle",
     "map.fixedSize": false,
     "map.lastUsedExportFilter": "JSON map-файлы (*.tmj *.json)",
     "map.lastUsedFormat": "tmx",
@@ -110,19 +116,21 @@
         "data/Tiled/tilesets/forestDecoration_1.tsx",
         "data/Tiled/tilesets/forestDecoration_2.tsx",
         "data/Tiled/maps/test_map.tmx",
+        "data/Tiled/tilesets/utilities.tsx",
         "data/Tiled/maps/generatortest.tmx",
-        "data/Tiled/tilesets/utilities.tsx"
+        "data/Tiled/tilesets/entities.tsx"
     ],
     "project": "project.tiled-project",
-    "property.type": "object",
+    "property.type": "string",
     "recentFiles": [
-        "data/Tiled/maps/generatortest.tmx",
         "data/Tiled/tilesets/forest_.tsx",
         "data/Tiled/tilesets/forestDecoration_0.tsx",
         "data/Tiled/tilesets/forestDecoration_1.tsx",
         "data/Tiled/tilesets/forestDecoration_2.tsx",
-        "data/Tiled/tilesets/utilities.tsx",
         "data/Tiled/maps/test_map.tmx",
+        "data/Tiled/tilesets/utilities.tsx",
+        "data/Tiled/tilesets/entities.tsx",
+        "data/Tiled/maps/generatortest.tmx",
         "C:/Users/gtim0/Desktop/pyscroll-master/apps/tutorial/data/grasslands.tmx"
     ],
     "tileset.embedInMap": false,

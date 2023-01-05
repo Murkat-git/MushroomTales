@@ -9,8 +9,8 @@ def convert_screen2world(coords, x_offset, y_offset, real_x_ratio, real_y_ratio)
 
 
 class Player(Entity):
-    def __init__(self, entity_type, weapon, pos, hp, speed, *groups: AbstractGroup) -> None:
-        super().__init__(entity_type, weapon, pos, hp, speed, *groups)
+    def __init__(self, world, entity_type, weapon, pos, hp, speed, *groups: AbstractGroup) -> None:
+        super().__init__(world, entity_type, weapon, pos, hp, speed, *groups)
         self.x_offset, self.y_offset = 0, 0
         self.real_ratio_x, self.real_ratio_y = 1, 1
 

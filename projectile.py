@@ -8,11 +8,16 @@ PATH = "data/Spritesheets/Projectiles/"
 
 
 class Projectile(pygame.sprite.Sprite):
-    def __init__(self, created_pos, target_pos, projectile_type, speed, lifetime,
-                 *groups: AbstractGroup) -> None:
+    def __init__(self, world, parent, created_pos, target_pos, projectile_type, speed, lifetime,
+                 dmg, *groups: AbstractGroup) -> None:
         super().__init__(*groups)
+        self.world = world
+        self.parent = parent
+        self.add(self.world.all_sprites, self.world.projectiles)
         self.cx, self.cy = created_pos
         self.tx, self.ty = target_pos
+
+        self.dmg = dmg
 
         rel_x, rel_y = self.cx - self.tx, self.ty - self.cy
         angle = math.degrees(math.atan2(rel_y, rel_x))
@@ -22,6 +27,7 @@ class Projectile(pygame.sprite.Sprite):
                                              angle)
         self.rect = self.image.get_rect()
         self.rect.center = created_pos
+        self.mask = pygame.mask.from_surface(self.image)
 
         self.pos = pygame.math.Vector2(self.rect.center)
         self.direction = pygame.Vector2()
@@ -35,5 +41,15 @@ class Projectile(pygame.sprite.Sprite):
         super().update(*args, **kwargs)
         self.pos += self.direction
         self.rect.center = round(self.pos.x), round(self.pos.y)
+        self.collide()
         if pygame.time.get_ticks() > self.created_time + self.lifetime:
             self.kill()
+
+    def collide(self):
+        collided_entities = pygame.sprite.spritecollide(self, self.world.entities, False)
+        for entity in collided_entities:
+            if type(entity) == type(self.parent):
+                return
+            if pygame.sprite.collide_mask(self, entity):
+                entity.hurt(self.dmg)
+                self.kill()

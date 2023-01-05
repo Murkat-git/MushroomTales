@@ -5,7 +5,7 @@ import math
 from copy import deepcopy
 from pytmx.util_pygame import load_pygame
 
-MIN_DIST = 5
+MIN_DIST = 2
 MAX_DIST = 10
 
 
@@ -123,7 +123,7 @@ class Generator:
 
         for i in connections:
             for x, y in i:
-                self.connections_layer.data[y][x] = self.bridge_tile
+                self.floor_layer.data[y][x] = self.bridge_tile
 
         return self.tmx_data
 

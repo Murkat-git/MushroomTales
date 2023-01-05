@@ -8,9 +8,11 @@ STEP = -5
 
 
 class Weapon(pygame.sprite.Sprite):
-    def __init__(self, weapon_type, projectile_type, projectile_speed, projectile_lifetime,
-                 *groups: AbstractGroup) -> None:
+    def __init__(self, world, weapon_type, projectile_type, projectile_speed, projectile_lifetime,
+                 dmg, *groups: AbstractGroup) -> None:
         super().__init__(*groups)
+        self.world = world
+        self.add(self.world.all_sprites)
         self.og_image = pygame.image.load(f"{PATH}{weapon_type}.png")
         self.image = self.og_image
         self.attacking = False
@@ -20,9 +22,12 @@ class Weapon(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.degrees = 0
 
+        self.dmg = dmg
+
         self.projectile_type = projectile_type
         self.projectile_speed = projectile_speed
         self.projectile_lifetime = projectile_lifetime
+
 
     def flip(self):
         self.step *= -1
@@ -50,15 +55,14 @@ class Weapon(pygame.sprite.Sprite):
     def update(self):
         self.animate()
 
-    def attack(self, coords, attack_coords):
+    def attack(self, coords, attack_coords, parent):
         if self.state is not None:
             return
         self.state = 1
         self.degrees = 0
 
-        projectile = Projectile(coords, attack_coords, self.projectile_type, self.projectile_speed,
-                                self.projectile_lifetime)
-        projectile.add(*self.groups())
+        projectile = Projectile(self.world, parent, coords, attack_coords, self.projectile_type,
+                                self.projectile_speed, self.projectile_lifetime, self.dmg)
 
     def set_pos(self, pos):
         self.rect.midbottom = pos
