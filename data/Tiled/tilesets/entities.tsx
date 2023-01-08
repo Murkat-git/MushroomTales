@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.9" tiledversion="1.9.2" name="entities" tilewidth="16" tileheight="16" tilecount="11" columns="0">
+<tileset version="1.9" tiledversion="1.9.2" name="entities" tilewidth="16" tileheight="16" tilecount="12" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0" x="4" y="8" width="16" height="16">
   <properties>
@@ -66,5 +66,11 @@
    <property name="type" value="troll_"/>
   </properties>
   <image width="24" height="24" source="../../Spritesheets/Entities/troll_/idle/tile000.png"/>
+ </tile>
+ <tile id="11">
+  <properties>
+   <property name="type" value="player_"/>
+  </properties>
+  <image width="16" height="16" source="../forest_ v1.3/player_tile.png"/>
  </tile>
 </tileset>

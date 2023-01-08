@@ -10,8 +10,9 @@ MAX_DIST = 10
 
 
 class Room:
-    def __init__(self, width, height):
+    def __init__(self, name, width, height):
         self.width, self.height = width, height
+        self.name = name
         self.layers = dict()
         self.connectors = []
         self.rect = None
@@ -79,23 +80,32 @@ class Generator:
 
         rooms = []
         connections = []
+        for i, room in enumerate(self.layouts_of_rooms):
+            if room.name == "spawn":
+                spawn_room = deepcopy(room)
+                del self.layouts_of_rooms[i]
+                break
+
+        x = random.randint(0, self.tmx_data.width - spawn_room.width)
+        y = random.randint(0, self.tmx_data.height - spawn_room.height)
+        spawn_room.set_rect(pygame.Rect(x, y, spawn_room.width, spawn_room.height))
+        self.place_room(spawn_room)
+        rooms.append(spawn_room)
+
         while len(rooms) < num_rooms:
             room = deepcopy(random.choice(self.layouts_of_rooms))
-            if len(rooms) == 0:
-                x = random.randint(0, self.tmx_data.width - room.width)
-                y = random.randint(0, self.tmx_data.height - room.height)
-            else:
-                random_room = random.choice(rooms)
-                distance = random.randint(MIN_DIST, MAX_DIST)
-                point_x, point_y = random_room.get_rect().center
-                a = random_room.get_rect().width / 2
-                b = random_room.get_rect().height / 2
-                theta = random.uniform(0, 2 * math.pi)
-                x = int(point_x + a * math.cos(theta) + distance * math.cos(theta))
-                y = int(point_y + b * math.sin(theta) + distance * math.sin(theta))
 
-                if x < 0 or y < 0 or x + room.width >= self.tmx_data.width or y + room.height >= self.tmx_data.height:
-                    continue
+            random_room = random.choice(rooms)
+            distance = random.randint(MIN_DIST, MAX_DIST)
+            point_x, point_y = random_room.get_rect().center
+            a = random_room.get_rect().width / 2
+            b = random_room.get_rect().height / 2
+            theta = random.uniform(0, 2 * math.pi)
+            x = int(point_x + a * math.cos(theta) + distance * math.cos(theta))
+            y = int(point_y + b * math.sin(theta) + distance * math.sin(theta))
+
+            if x < 0 or y < 0 or x + room.width >= self.tmx_data.width or y + room.height >= self.tmx_data.height:
+                continue
 
             room.set_rect(pygame.Rect(x, y, room.width, room.height))
 
@@ -185,7 +195,7 @@ class Generator:
         rooms = []
 
         for rectangle in self.tmx_data.get_layer_by_name("Rooms"):
-            room = Room(int(rectangle.width) // tile_size, int(rectangle.height) // tile_size)
+            room = Room(rectangle.name, int(rectangle.width) // tile_size, int(rectangle.height) // tile_size)
             for layer in self.tmx_data.layers:
                 if type(layer) != pytmx.TiledTileLayer:
                     continue

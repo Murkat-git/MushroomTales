@@ -3,8 +3,11 @@ import pytmx
 import pyscroll
 from pytmx.util_pygame import load_pygame
 from generator import Generator
-from entity import Entity
+from enemy import Enemy
+from player import Player
 from weapon import Weapon
+
+DEBUG = False
 
 
 class World:
@@ -20,7 +23,7 @@ class World:
         )
 
         self.map_layer.zoom = 3
-        self.all_sprites = pyscroll.PyscrollGroup(map_layer=self.map_layer, default_layer=1)
+        self.all_sprites = pyscroll.PyscrollGroup(map_layer=self.map_layer, default_layer=2)
 
         self.entities = pygame.sprite.Group()
         self.projectiles = pygame.sprite.Group()
@@ -46,7 +49,10 @@ class World:
                 continue
             entity_weapon = Weapon(self, "diamondSword_", "sword_projectile", 1.25, 500, 1)
             entity_type = self.tmx_data.get_tile_properties_by_gid(gid)["type"]
-            Entity(self, entity_type, entity_weapon, (x * tile_size, y * tile_size), 3, 1)
+            if entity_type == "player_":
+                self.player = Player(self, entity_weapon, (x * tile_size, y * tile_size), 5, 1)
+            else:
+                Enemy(self, entity_type, entity_weapon, (x * tile_size, y * tile_size), 3, 0.75)
             print(x, y, gid, "entity")
 
     def get_group(self):
@@ -54,6 +60,12 @@ class World:
 
     def draw(self, surface):
         self.all_sprites.draw(surface)
+        if DEBUG:
+            for i in self.entities.sprites() + self.projectiles.sprites():
+                x, y = self.map_layer.translate_point((i.rect.topleft))
+                surface.blit(
+                    i.mask.to_surface(unsetcolor=(0, 0, 0, 0), setcolor=(255, 255, 255, 255)),
+                    (x, y))
 
     def center(self, sprite):
         self.all_sprites.center(sprite.rect.center)

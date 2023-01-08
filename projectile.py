@@ -39,17 +39,16 @@ class Projectile(pygame.sprite.Sprite):
 
     def update(self, *args: Any, **kwargs: Any) -> None:
         super().update(*args, **kwargs)
+        self.collide()
         self.pos += self.direction
         self.rect.center = round(self.pos.x), round(self.pos.y)
-        self.collide()
         if pygame.time.get_ticks() > self.created_time + self.lifetime:
             self.kill()
 
     def collide(self):
-        collided_entities = pygame.sprite.spritecollide(self, self.world.entities, False)
+        collided_entities = pygame.sprite.spritecollide(self, self.world.entities, False, pygame.sprite.collide_mask)
         for entity in collided_entities:
             if type(entity) == type(self.parent):
                 return
-            if pygame.sprite.collide_mask(self, entity):
-                entity.hurt(self.dmg)
-                self.kill()
+            entity.hurt(self.dmg)
+            self.kill()

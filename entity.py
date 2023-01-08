@@ -77,6 +77,7 @@ class Entity(pygame.sprite.Sprite):
             self.frame_id %= num_frames
             self.image = pygame.transform.flip(self.frames[self.status][self.frame_id],
                                                self.is_flipped_x, False)
+            self.mask = pygame.mask.from_surface(self.image)
             # self.image.fill((255, 255, 255))
 
     def update(self):
@@ -150,6 +151,7 @@ class Entity(pygame.sprite.Sprite):
     def hurt(self, dmg):
         self.hp -= dmg
         if self.hp <= 0:
+            self.hp = 0
             self.change_status("death")
         else:
             self.change_status("hurt")

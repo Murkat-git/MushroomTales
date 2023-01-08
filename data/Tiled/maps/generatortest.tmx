@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="50" height="51" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="15">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="50" height="51" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="17">
  <tileset firstgid="1" source="../tilesets/forest_.tsx"/>
  <tileset firstgid="541" source="../tilesets/forestDecoration_0.tsx"/>
  <tileset firstgid="662" source="../tilesets/utilities.tsx"/>
  <tileset firstgid="669" source="../tilesets/forestDecoration_2.tsx"/>
  <tileset firstgid="1219" source="../tilesets/entities.tsx"/>
+ <tileset firstgid="1231" source="../tilesets/forestDecoration_1.tsx"/>
  <layer id="1" name="Floor" width="50" height="51">
   <data encoding="base64" compression="zlib">
-   eJzt1k0OgjAQBeDRG/jHGoyuVWKiK+NKb6gbr+O9bKMNhLRWKNBHfJO8FGoX/RKmNROR21jkORK5q/GhkglOfq3Y+6TD71iobB1JAtb27VjKu19sSQPWxnLMS3s0zy7HSY1HlYPK2bE2liMvOcyzy2F+q74jOOp+V6iOiRqnn8xkuI6NFGfPzuPQ/XFVuQhefwz9vFpJ8T1Vsw5Y27cDKU0c5bs5+TKH7ND7Nb1senxvmevbUtdh69fcMpcO0NHVGUSH36HPT3Nnu6Lv9zbO0i4dPksMQ1OHyxLLEOKoWmIaQh3G0tZ/i5gOlNCBFTqwQgdW6MAKHVihAyt0YIUOrNCBlX9zsFgsFovVpF4foCOs
-  </data>
- </layer>
- <layer id="7" name="Connections" width="50" height="51">
-  <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAACAFwMn2AAB
+   eJztlksKwjAQhkdv4KvrVnStFkFX4kpvqBuv472coKEhJKYPkv6BGfhIms4iH2QmqYjoMSV6T4iePL6YinBoG2PvUzzCHitm76EYkJvaY03fenFRDsgdy2Np7FHPfR4XHs/Mibl6csfyqA0PPfd56H/2N4JH13OF6jHjcf5jQfl67KjpPYeAh6qPO3MjvPrIvV9tqDlPNtsBuak9kOjjYd7NxZ81ZA+1X13LusaPjrXULl09XPVaO9bKDD1CPSj2GzGVR+ye28dD9U99Z/tQ97vZSxE9Qi62A7KHz8XlgO5hu/gccvDQLqG3RQ4ebYj9tkrlkQLxwEI8sBAPLMQDC/HAQjywEA8sxAML8cBCQkJCQkIiZnwApMQ60A==
   </data>
  </layer>
  <layer id="2" name="Decorations" width="50" height="51">
   <data encoding="base64" compression="zlib">
-   eJzt1j0KgDAMhuHS4/gz+nMHwU08gI6ewwt7AeMgVMigm195Hyi0pUNCEmgIAL6a4vPc23mO/lsFnXDsORpf1mOP/h5ItU5vDPQLECpnDkqx2Vgs3lUsZk9hOdROHpvdNcL5eT2m4q5HDv+LKxf+uv+iPBsAkJsjWQAAAAAAAPifE7RyCYM=
+   eJzt1k0KwjAQhuEh6LIeRO2y6hksuBMPYJf+3MKDegNxLTgFhVgGWrvQTngfCDRpF/ORpIwIgG9tw+d8pfNdsL/1YOm49hRtOu7HJdjPQGxhnI2S8wLI3LgHM2d3Y6/1Vs5qtkw1Q27kOOha4TifdcZip8b7If2b3/vRt7/o2sv8Qp2lb6/b3CMPrqN/V9Cu7W7UbprjmECv+9Ac2VhkouP8yrB2mgVAmu7RAAAAAAAAwPA8AS2ZD7U=
   </data>
  </layer>
  <layer id="3" name="Tall decorations" width="50" height="51">
   <data encoding="base64" compression="zlib">
-   eJzt00ENACAQA8ELykgwAf6NcC4gzYyCPrpVABnWeL2AdNPHIMLulo+eAQAAAAAAgI9daMYBPQ==
+   eJzt1sEJACEMBMBgYwo2cX6v/yLOBvwJB8tMBQnshlQBZJjt7wlIN2QMIjy7y0ufYyTdZr8MN7yhOeqhewEAAAAAwMkHrhkCaQ==
   </data>
  </layer>
  <layer id="6" name="Connectors" width="50" height="51" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzt07kRACAIBEDH/kuwWHMDRwMYn92Ui+AoBfK1GpuH28w6Ps52svCi1Z77hxz2fC63yWHP8Ce/DwAAAABAtA6f1gdp
+   eJzt07sNwCAMBUDE/iMwbHqKCJBiOfiuxQXPn9Yg3ujf1sPfvO34/LZTCzda3XP3EEOf87p9NlnyZfkH5yrMsELGaJV7Wjk7AAAAAECkB6tKCeE=
   </data>
  </layer>
  <layer id="11" name="Entities" width="50" height="51" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzt0rERgCAQRUEC+m8KDUTtyYhQTRTmdLeCd3M/JeBtcx5dcK8GaOTa5oc8YLIjfqwE3f8StLvZg/efWT96FwAAAAAAAH0cg+oGZA==
+   eJzt0jEWQDAQRdEU2f+mRIGwJpUSDUcm7l3Bm/MnJeBtY/664N4coJFr1YY8oPgjfmwI+v9T0O7DGrz/zNLpXb3b7AYAAAAAADRiB8wCBzY=
   </data>
  </layer>
  <objectgroup id="4" name="Rooms">
   <object id="2" x="32" y="208" width="176" height="160"/>
   <object id="3" x="80" y="48" width="128" height="144"/>
   <object id="4" x="256" y="48" width="128" height="144"/>
+  <object id="15" name="spawn" x="240" y="256" width="128" height="128"/>
  </objectgroup>
 </map>
