@@ -6,11 +6,14 @@ size = width, height = 500, 500
 fps = 60
 
 pygame.font.init()
+pygame.mixer.init()
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("RPG")
 clock = pygame.time.Clock()
 
 menu = Menu()
+pygame.mixer.music.load("data/sfx/music.wav")
+pygame.mixer.music.play(-1, fade_ms=3000)
 while menu.is_active():
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -21,6 +24,8 @@ while menu.is_active():
 
 path = "data/Tiled/maps/generatortest.tmx"
 game = Game(path)
+
+
 
 running = True
 while running:

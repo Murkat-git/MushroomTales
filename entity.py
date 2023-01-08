@@ -35,6 +35,11 @@ class Entity(pygame.sprite.Sprite):
         self.looking = "right"
         self.hp = hp
 
+        self.hit_sound = pygame.mixer.Sound("data/sfx/hitHurt.wav")
+        self.hit_sound.set_volume(0.5)
+        self.death_sound = pygame.mixer.Sound("data/sfx/death.wav")
+        self.death_sound.set_volume(0.3)
+
     def load_frames(self, entity_type):
         self.frames = dict()
         path = f"{PATH}{entity_type}"
@@ -52,8 +57,10 @@ class Entity(pygame.sprite.Sprite):
         self.frame_id = 0
         self.anim_counter = 0
         self.frame_time = 10
-        if new_status in "hurt":
-            self.frame_time = 5
+        if new_status == "hurt":
+            self.frame_time = 4
+        elif new_status == "death":
+            self.frame_time = 8
 
     def check_status(self):
         if self.status in ["hurt", "death"]:
@@ -146,12 +153,17 @@ class Entity(pygame.sprite.Sprite):
             self.weapon.set_pos((x + WEAPON_OFFSET, y))
 
     def attack(self, coord):
-        self.weapon.attack(self.rect.center, coord, self)
+        if self.hp > 0:
+            self.weapon.attack(self.rect.center, coord, self)
 
     def hurt(self, dmg):
+        if self.hp == 0:
+            return
         self.hp -= dmg
+        self.hit_sound.play()
         if self.hp <= 0:
             self.hp = 0
+            self.death_sound.play()
             self.change_status("death")
         else:
             self.change_status("hurt")

@@ -23,7 +23,7 @@ class World:
         )
 
         self.map_layer.zoom = 3
-        self.all_sprites = pyscroll.PyscrollGroup(map_layer=self.map_layer, default_layer=2)
+        self.all_sprites = pyscroll.PyscrollGroup(map_layer=self.map_layer, default_layer=1)
 
         self.entities = pygame.sprite.Group()
         self.projectiles = pygame.sprite.Group()

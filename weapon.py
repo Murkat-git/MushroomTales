@@ -28,6 +28,9 @@ class Weapon(pygame.sprite.Sprite):
         self.projectile_speed = projectile_speed
         self.projectile_lifetime = projectile_lifetime
 
+        self.shoot_sound = pygame.mixer.Sound("data/sfx/shoot.wav")
+        self.shoot_sound.set_volume(0.3)
+
 
     def flip(self):
         self.step *= -1
@@ -61,6 +64,7 @@ class Weapon(pygame.sprite.Sprite):
         self.state = 1
         self.degrees = 0
 
+        self.shoot_sound.play()
         projectile = Projectile(self.world, parent, coords, attack_coords, self.projectile_type,
                                 self.projectile_speed, self.projectile_lifetime, self.dmg)
 
