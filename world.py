@@ -6,6 +6,7 @@ from generator import Generator
 from enemy import Enemy
 from player import Player
 from weapon import Weapon
+from stats import ENEMY_STATS, WEAPONS_STATS, PLAYER_STATS
 
 DEBUG = False
 
@@ -47,13 +48,29 @@ class World:
         for x, y, gid in self.tmx_data.get_layer_by_name("Entities"):
             if gid == 0:
                 continue
-            entity_weapon = Weapon(self, "diamondSword_", "sword_projectile", 1.25, 500, 1)
             entity_type = self.tmx_data.get_tile_properties_by_gid(gid)["type"]
             if entity_type == "player_":
-                self.player = Player(self, entity_weapon, (x * tile_size, y * tile_size), 5, 1)
+                player_hp = PLAYER_STATS["hp"]
+                player_speed = PLAYER_STATS["speed"]
+                player_weapon_type = PLAYER_STATS["weapon"]
+                projectile_type = WEAPONS_STATS[player_weapon_type]["projectile_type"]
+                projectile_speed = WEAPONS_STATS[player_weapon_type]["projectile_speed"]
+                projectile_lifetime = WEAPONS_STATS[player_weapon_type]["projectile_lifetime"]
+                weapon_dmg = WEAPONS_STATS[player_weapon_type]["dmg"]
+                entity_weapon = Weapon(self, player_weapon_type, projectile_type, projectile_speed, projectile_lifetime, weapon_dmg)
+                self.player = Player(self, entity_weapon, (x * tile_size, y * tile_size), player_hp, player_speed)
             else:
-                Enemy(self, entity_type, entity_weapon, (x * tile_size, y * tile_size), 3, 0.75)
+                enemy_hp = ENEMY_STATS[entity_type]['hp']
+                enemy_speed = ENEMY_STATS[entity_type]['speed']
+                enemy_weapon_type = ENEMY_STATS[entity_type]['weapon']
+                projectile_type = WEAPONS_STATS[enemy_weapon_type]["projectile_type"]
+                projectile_speed = WEAPONS_STATS[enemy_weapon_type]["projectile_speed"]
+                projectile_lifetime = WEAPONS_STATS[enemy_weapon_type]["projectile_lifetime"]
+                weapon_dmg = WEAPONS_STATS[enemy_weapon_type]["dmg"]
+                entity_weapon = Weapon(self, enemy_weapon_type, projectile_type, projectile_speed, projectile_lifetime, weapon_dmg)
+                Enemy(self, entity_type, entity_weapon, (x * tile_size, y * tile_size), enemy_hp, enemy_speed)
             print(x, y, gid, "entity")
+
 
     def get_group(self):
         return self.all_sprites
