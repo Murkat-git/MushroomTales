@@ -1,4 +1,4 @@
-# TopdownRPG
+# MushroomTales
 Yandex lyceum pygame project
 
 Увидеть наши мыслительные процессы можно тут:
