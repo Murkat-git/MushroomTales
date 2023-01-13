@@ -14,37 +14,37 @@ ENEMY_STATS = {
         "hp": 3,
         "weapon": "goldenSpear"
     },
-    "fairyQueen": {
+    "fairyQueen_": {
         "speed": 1,
         "hp": 5,
         "weapon": "goldenKnife"
     },
-    "fFairy": {
+    "fFairy_": {
         "speed": 1,
         "hp": 3,
         "weapon": "goldenKnife"
     },
-    "fungiant": {
+    "fungiant_": {
         "speed": 1,
         "hp": 3,
         "weapon": "ironPickaxe"
     },
-    "gnome": {
+    "gnome_": {
         "speed": 1,
         "hp": 3,
         "weapon": "stoneKnife"
     },
-    "golem": {
+    "golem_": {
         "speed": 1,
         "hp": 3,
         "weapon": "ironSword"
     },
-    "ogre": {
+    "ogre_": {
         "speed": 1,
         "hp": 3,
         "weapon": "stonePickaxe"
     },
-    "troll": {
+    "troll_": {
         "speed": 1,
         "hp": 3,
         "weapon": "stonePickaxe"
@@ -59,55 +59,49 @@ WEAPONS_STATS = {
         "projectile_lifetime": 500,
         "dmg": 1
     },
-    "ironKnife": {
+    "ironKnife_": {
         "projectile_type": "attack_wave",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
     },
-    "StonePickaxe": {
+    "StonePickaxe_": {
         "projectile_type": "attack_wave",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
     },
-    "ironSword": {
+    "ironSword_": {
         "projectile_type": "attack_wave",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
     },
-    "stoneKnife": {
+    "stoneKnife_": {
         "projectile_type": "attack_wave",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
     },
-    "goldenKnife": {
+    "goldenKnife_": {
         "projectile_type": "attack_wave",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
     },
-    "": {
+    "diamondSword_": {
+        "projectile_type": "attack_wave",
+        "projectile_speed": 1.5,
+        "projectile_lifetime": 500,
+        "dmg": 2
+    },
+    "ironPickaxe_": {
         "projectile_type": "attack_wave",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
     },
-    "diamondSword": {
-        "projectile_type": "attack_wave",
-        "projectile_speed": 1.5,
-        "projectile_lifetime": 500,
-        "dmg": 1
-    },
-    "ironPickaxe": {
-        "projectile_type": "attack_wave",
-        "projectile_speed": 1.5,
-        "projectile_lifetime": 500,
-        "dmg": 1
-    },
-    "goldenSpear": {
+    "goldenSpear_": {
         "projectile_type": "attack_wave",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
