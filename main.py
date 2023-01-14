@@ -8,7 +8,7 @@ fps = 60
 pygame.font.init()
 pygame.mixer.init()
 screen = pygame.display.set_mode(size)
-pygame.display.set_caption("RPG")
+pygame.display.set_caption("Mushroom Tales")
 clock = pygame.time.Clock()
 
 menu = Menu()
