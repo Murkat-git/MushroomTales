@@ -7,47 +7,47 @@ ENEMY_STATS = {
     "boar_": {
         "speed": 1,
         "hp": 3,
-        "weapon": "ironKnife"
+        "weapon": "ironKnife_"
     },
     "centaur_": {
         "speed": 1,
         "hp": 3,
-        "weapon": "goldenSpear"
+        "weapon": "goldenSpear_"
     },
     "fairyQueen_": {
         "speed": 1,
         "hp": 5,
-        "weapon": "goldenKnife"
+        "weapon": "goldenKnife_"
     },
     "fFairy_": {
         "speed": 1,
         "hp": 3,
-        "weapon": "goldenKnife"
+        "weapon": "goldenKnife_"
     },
     "fungiant_": {
         "speed": 1,
         "hp": 3,
-        "weapon": "ironPickaxe"
+        "weapon": "ironPickaxe_"
     },
     "gnome_": {
         "speed": 1,
         "hp": 3,
-        "weapon": "stoneKnife"
+        "weapon": "stoneKnife_"
     },
     "golem_": {
         "speed": 1,
         "hp": 3,
-        "weapon": "ironSword"
+        "weapon": "ironSword_"
     },
     "ogre_": {
         "speed": 1,
         "hp": 3,
-        "weapon": "stonePickaxe"
+        "weapon": "stonePickaxe_"
     },
     "troll_": {
         "speed": 1,
         "hp": 3,
-        "weapon": "stonePickaxe"
+        "weapon": "stonePickaxe_"
     }
 
 }
@@ -65,7 +65,7 @@ WEAPONS_STATS = {
         "projectile_lifetime": 500,
         "dmg": 1
     },
-    "StonePickaxe_": {
+    "stonePickaxe_": {
         "projectile_type": "attack_wave",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
