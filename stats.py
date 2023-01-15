@@ -60,13 +60,13 @@ WEAPONS_STATS = {
         "dmg": 1
     },
     "ironKnife_": {
-        "projectile_type": "attack_wave",
+        "projectile_type": "knife_projectile",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
     },
     "stonePickaxe_": {
-        "projectile_type": "attack_wave",
+        "projectile_type": "pickaxe_projectile",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
@@ -78,13 +78,13 @@ WEAPONS_STATS = {
         "dmg": 1
     },
     "stoneKnife_": {
-        "projectile_type": "attack_wave",
+        "projectile_type": "knife_projectile",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
     },
     "goldenKnife_": {
-        "projectile_type": "attack_wave",
+        "projectile_type": "knife_projectile",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
@@ -93,16 +93,16 @@ WEAPONS_STATS = {
         "projectile_type": "attack_wave",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
-        "dmg": 2
+        "dmg": 1
     },
     "ironPickaxe_": {
-        "projectile_type": "attack_wave",
+        "projectile_type": "pickaxe_projectile",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
     },
     "goldenSpear_": {
-        "projectile_type": "attack_wave",
+        "projectile_type": "spear_projectile",
         "projectile_speed": 1.5,
         "projectile_lifetime": 500,
         "dmg": 1
@@ -113,6 +113,6 @@ WEAPONS_STATS = {
 }
 PLAYER_STATS = {
     "speed": 1,
-    "hp": 10,
+    "hp": 6,
     "weapon": "diamondSword_"
 }
